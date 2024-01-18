@@ -2,8 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 :root {
@@ -15,25 +13,23 @@
   text-rendering: optimizeLegibility;
 }
 
+* {
+  margin: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
 body {
-  min-height: 100dvh;
   line-height: 1.5;
 }
 
 h1,
 h2,
 h3,
-h4,
-button,
-input,
-label {
-  line-height: 1.1;
-}
-
-h1,
-h2,
-h3,
-h4,
 p {
   text-wrap: balance;
   overflow-wrap: break-word;
