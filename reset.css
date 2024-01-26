@@ -5,24 +5,15 @@
 }
 
 * {
-  margin: 0;
+  position: relative;
+  margin: unset;
+  min-width: 0;
 }
 
 html,
 body,
 #root {
-  height: 100%;
-}
-
-body {
-  line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-p {
-  overflow-wrap: break-word;
+  min-height: 100dvh;
 }
 
 img,
@@ -39,6 +30,16 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 #root,
